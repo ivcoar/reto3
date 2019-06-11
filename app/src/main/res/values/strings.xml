@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Reto 3</string>
+    <string name="welcome">Introduzca un apodo</string>
+    <string name="name">Apodo</string>
+    <string name="login">Acceder</string>
+    <string name="msg_hello">Hola %s</string>
+    <string name="action_settings">Ajustes</string>
+
+    <string name="label_positions">Posiciones</string>
+    <string name="label_distance">Distancia total: %s</string>
+    <string name="label_temperature">Temperatura</string>
+    <string name="label_current_temp">Temperatura actual: %s</string>
+    <string name="label_average_temp">Temperatura media: %s</string>
+
+    <!-- Settings -->
+    <string name="distance_unit">Unidad de distancia</string>
+    <string name="distance_unit_meters">Metros</string>
+    <string name="distance_unit_feet">Pies</string>
+
+    <string name="err_empty_name">Debes introducir un apodo</string>
+    <string name="err_no_location">No se pudo acceder a la localización GPS</string>
+    <string name="err_no_temp">No se pudo acceder al sensor de temperatura</string>
+
+    <string name="north">N</string>
+    <string name="south">S</string>
+    <string name="east">E</string>
+    <string name="west">O</string>
+</resources>

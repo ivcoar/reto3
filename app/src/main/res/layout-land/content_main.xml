@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/activity_main"
+        tools:context=".MainActivity"
+        android:orientation="horizontal"
+        android:padding="@dimen/fab_margin"
+        android:weightSum="2">
+
+    <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginEnd="8dp">
+
+        <TextView
+                android:text="@string/msg_hello"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/helloText"/>
+
+        <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+            <TextView
+                    android:text="@string/label_positions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+            <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/positionSwitch" android:checked="false"/>
+        </RelativeLayout>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryDark"/>
+        <ListView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/positionList"
+                android:background="#eee"
+                android:padding="@dimen/list_padding">
+        </ListView>
+        <TextView
+                android:id="@+id/distanceText"
+                android:text="@string/label_distance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+        <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+            <TextView
+                    android:text="@string/label_temperature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+            <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/temperatureSwitch" android:checked="false"/>
+        </RelativeLayout>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryDark"/>
+        <TextView
+                android:id="@+id/currentTempText"
+                android:text="@string/label_current_temp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+        <TextView
+                android:id="@+id/averageTempText"
+                android:text="@string/label_average_temp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+    </LinearLayout>
+
+</LinearLayout>
